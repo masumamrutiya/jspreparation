@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* Questions */
+.question {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #007BFF;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.question:hover {
+    transform: scale(1.02);
+}
+
+.question h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    animation: fadeInLeft 1s ease;
+}
+
+/* Highlighted Answer */
+.question p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.8;
+    background-color: #e9f5ff;  /* Light blue background to highlight the answer */
+    padding: 10px 15px;
+    border-left: 5px solid #007BFF;  /* Add a blue left border for emphasis */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInRight 1s ease;
+}
+
+.question p:hover {
+    background-color: #d0e9ff;  /* Slight color change on hover for better effect */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .question h2 {
+        font-size: 1.3rem;
+    }
+
+    .question p {
+        font-size: 1rem;
+    }
+}
+
+
+
+.highlight {
+    font-weight: bold;           /* Make it bold */
+    color: #007BFF;              /* Change the color to blue */
+    font-size: 1.2rem;           /* Slightly larger font size */
+    text-transform: uppercase;   /* Make the text uppercase */
+    padding-right: 5px;          /* Add a little space after the span */
+}

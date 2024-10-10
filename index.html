@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Viva Questions</title>
+    <link rel="stylesheet" href="indev.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Interview Questions</h1>
+
+        <div class="question">
+            <h2>1. JavaScript kya hai aur iska primary use kya hai?</h2>
+            <p> <span class="highlight">Answer:</span> JavaScript ek high-level, interpreted programming language hai jo web browsers me run hoti hai. Iska primary use dynamic content, interactivity, aur client-side validations ko handle karna hota hai. Yeh HTML aur CSS ke saath milkar web pages ko interactive banata hai.</p>
+        </div>
+
+        <div class="question">
+            <h2>2. var, let, const me kya difference hai?</h2>
+            <p> <span class="highlight">Answer:</span> var: Function-scoped hota hai. Isse redeclare kiya ja sakta hai aur hoisting kaam karta hai. let: Block-scoped hota hai. Isko redeclare nahi kar sakte, lekin reassign kar sakte hain. const: Block-scoped aur constant value ke liye use hota hai. Isse neither redeclare kar sakte hain aur na hi reassign kar sakte hain.</p>
+        </div>
+
+        <div class="question">
+            <h2>3. JavaScript me '===' aur '==' ka kya fark hai?</h2>
+            <p><span class="highlight">Answer:</span> == (loose equality): Yeh values ko compare karta hai, type coercion karta hai. Jaise 2 == "2" true hoga. === (strict equality): Yeh values aur types dono ko compare karta hai. Jaise 2 === "2" false hoga kyunki type different hai.</p>
+        </div>
+
+        <div class="question">
+            <h2>4. Arrow functions aur normal functions me kya difference hai?</h2>
+            <p><span class="highlight">Answer:</span> Arrow functions concise syntax ke saath aati hain. Arrow functions ka this context lexical hota hai, yani this parent scope se inherit karta hai. Normal functions ka this dynamic hota hai, function call ke time pe decide hota hai.</p>
+        </div>
+
+        <div class="question">
+            <h2>5. 'Hoisting' kya hoti hai JavaScript me?</h2>
+            <p><span class="highlight">Answer:</span> Hoisting ek JavaScript mechanism hai jisme variables aur function declarations ko unke actual execution se pehle memory me allocate kar diya jata hai. Iska matlab hai ki aap unhe declare karne se pehle bhi access kar sakte hain (lekin let aur const ke saath aisa nahi hota).</p>
+        </div>
+
+        <div class="question">
+            <h2>6. Callback function kya hoti hai?</h2>
+            <p><span class="highlight">Answer:</span> Callback function ek function hota hai jo doosre function ko argument ke roop me pass kiya jata hai, aur jab doosra function execute ho jata hai, toh callback ko call kiya jata hai. Yeh asynchronous operations me commonly use hota hai.</p>
+        </div>
+
+        <div class="question">
+            <h2>7. Promises kya hoti hain?</h2>
+            <p><span class="highlight">Answer:</span> Promises ek asynchronous operation ko represent karti hain, jo future me resolve ya reject hogi. Promise ke 3 states hote hain: pending, resolved, aur rejected.</p>
+        </div>
+
+        <div class="question">
+            <h2>8. Closures kya hoti hain?</h2>
+            <p><span class="highlight">Answer:</span> Closure ek function hota hai jo apne lexical environment (scope) ke variables ko yaad rakhta hai, chahe wo function ke scope ke bahar hi kyon na ho.</p>
+        </div>
+
+        <div class="question">
+            <h2>9. 'this' keyword ka use kaise hota hai?</h2>
+            <p><span class="highlight">Answer:</span> this keyword current execution context ko refer karta hai. Agar function ko as a method call karte hain, toh this us object ko refer karega. Agar function standalone call hota hai, toh this global object (browser me window) ko refer karega.</p>
+        </div>
+    </div>
+</body>
+</html>
